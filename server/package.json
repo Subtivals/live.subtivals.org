@@ -1,0 +1,24 @@
+{
+    "name": "subtivals-live-server",
+    "version": "0.0.1",
+    "description": "",
+    "keywords": [
+        "Subtivals",
+        "Websocket"
+    ],
+    "main": "server.js",
+    "bugs": {
+        "url": "https://github.com/Subtivals/live.subtivals.org/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Subtivals/live.subtivals.org.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "test": "make test"
+    },
+    "dependencies": {
+        "websocket": "1.0.x"
+    }
+}
