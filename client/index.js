@@ -5,6 +5,8 @@
         throw new Error("Invalid credentials format.");
     }
 
+    // If the token format changes here, then the link displayed in Subtivals
+    // should change too (see `WebLive::liveUrl()` in `weblive.cpp`).
     var credentials = token.split("|");
     var server = credentials[0];
     var secret = credentials[1];
@@ -23,13 +25,20 @@
     };
 
     connection.onmessage = function (message) {
-        // try to decode json (I assume that each message from server is json)
+        var data;
         try {
-            var data = JSON.parse(message.data);
+            data = JSON.parse(message.data);
         } catch (e) {
             console.log('This doesn\'t look like a valid JSON: ', message.data);
             return;
         }
+
+        // filter messages by channel
+        // XXX: subscribe and route on server.
+        if (data.channel != secret) {
+            return;
+        }
+
         // handle incoming message
         var event = data.type;
         if (event == 'add-subtitle') {
