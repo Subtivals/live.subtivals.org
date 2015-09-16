@@ -1,9 +1,16 @@
 (function () {
-    var SERVER = "ws://95.85.60.144:3141/";
+    var token = window.location.hash.slice(1);
+    token = atob(token);
+    if (!/.*\/.*/.test(token)) {
+        throw new Error("Invalid credentials format.");
+    }
 
-    var connection = new WebSocket(SERVER);
+    var credentials = token.split("|");
+    var server = credentials[0];
+    var secret = credentials[1];
+    var connection = new WebSocket(server);
 
-    var subtitleDiv = document.querySelector('.subtitle');    
+    var subtitleDiv = document.querySelector('.subtitle');
 
     subtitleDiv.innerHTML = 'Connecting...';
 
