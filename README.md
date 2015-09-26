@@ -1,6 +1,6 @@
 # Description
 
-[Subtivals](http://subtivals.org/) 1.8 comes with a new feature called *Web live*. When enabled, Subtivals synchronously shows the subtitles on a Web page, allowing spectators to read subtitles on their mobile or tablet.
+[Subtivals](http://subtivals.org/) 1.8 comes with a new feature called *Web live*. When enabled, Subtivals synchronously shows the subtitles on a Web page, allowing spectators to read subtitles on their mobile, tablet or extra big screens.
 
 ![Web live screenshot](https://cloud.githubusercontent.com/assets/546692/9920151/fd12904a-5cd1-11e5-9da8-ca78f8b952c8.png)
 
