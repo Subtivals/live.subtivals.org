@@ -40,6 +40,10 @@ The `secret` should be set to the value of your choice. It should be considered 
 
 Start subtivals, and the *Web live* checkbox in preferences should now be enabled!
 
+When checked, Subtivals connects to the server, and shows the full display URL. Clic on the link to test, or give the URL to your spectators!
+
+> Since it is very long (eg. http://live.subtivals.org/#d3M6Ly9saXZlLnN1YnRpdmFscy5vcmc6MzE0MXxvdG90bw==), you can use an URL shorterner like http://goo.gl or http://bit.ly
+
 
 # Run your own server
 
