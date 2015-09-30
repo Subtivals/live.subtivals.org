@@ -42,6 +42,8 @@ Start subtivals, and the *Web live* checkbox in preferences should now be enable
 
 When checked, Subtivals connects to the server, and shows the full display URL. Clic on the link to test, or give the URL to your spectators!
 
+> On Windows7 with Firefox, clicking on the link seems to work fine. [A bug was filed](https://github.com/traxtech/subtivals/issues/272) about the link not being opened completed on some systems.
+
 > Since it is very long (eg. http://live.subtivals.org/#d3M6Ly9saXZlLnN1YnRpdmFscy5vcmc6MzE0MXxvdG90bw==), you can use an URL shorterner like http://goo.gl or http://bit.ly
 
 
