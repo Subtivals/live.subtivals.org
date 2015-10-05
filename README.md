@@ -15,7 +15,7 @@ For more details, [read the blog article](http://blog.mathieu-leplatre.info/subt
 The location of the configuration file depends on the operating system.
 
 * On **Windows**, it should be located in this folder ``C:\Users\<Name>\AppData\Roaming\Subtivals\Subtivals.ini`` or ``C:\Documents and Settings\<Name>\Application Data\Subtivals\Subtivals.ini`` depending on the Windows version.
-* On **Mac OS**, in ``/Users/<Name>/.config/Subtivals/Subtivals.ini``
+* On **Mac OS**, in ``/Users/<Name>/.config/http:/Subtivals/Subtivals.ini``
 * On **Linux**, in ``/home/<Name>/.config/Subtivals/Subtivals.ini``
 
 Close Subtivals if it is running, and edit the configuration file with a text editor.
