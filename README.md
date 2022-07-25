@@ -1,6 +1,6 @@
 # Description
 
-[Subtivals](http://subtivals.org/) 1.8 comes with a new feature called *Web live*. When enabled, Subtivals synchronously shows the subtitles on a Web page, allowing spectators to read subtitles on their mobile, tablet or extra big screens.
+[Subtivals](http://subtivals.org/) 1.8+ comes with a new feature called *Web live*. When enabled, Subtivals synchronously shows the subtitles on a Web page, allowing spectators to read subtitles on their mobile, tablet or extra big screens.
 
 ![Web live screenshot](https://cloud.githubusercontent.com/assets/546692/9920151/fd12904a-5cd1-11e5-9da8-ca78f8b952c8.png)
 
@@ -32,11 +32,11 @@ Add those lines to the configuration file:
 ```
 [Weblive]
 secret=festival-Z-room-X
-server=ws://live.subtivals.org
-url=http://live.subtivals.org
+server=wss://live.subtivals.org
+url=https://live.subtivals.org
 ```
 
-The `secret` should be set to the value of your choice. It should be considered as a *projection id*, and determine which subtitles are shown on the Web page.
+The `secret` parameter should be set to the value of **your choice**. It should be considered as a *projection id*, and determine which subtitles are shown on the Web page.
 
 Start subtivals, and the *Web live* checkbox in preferences should now be enabled!
 
@@ -44,12 +44,12 @@ When checked, Subtivals connects to the server, and shows the full display URL. 
 
 > On Windows7 with Firefox, clicking on the link seems to work fine. [A bug was filed](https://github.com/traxtech/subtivals/issues/272) about the link not being opened completed on some systems.
 
-> Since it is very long (eg. http://live.subtivals.org/#d3M6Ly9saXZlLnN1YnRpdmFscy5vcmc6MzE0MXxvdG90bw==), you can use an URL shorterner like http://goo.gl or http://bit.ly
+> Since it is very long (eg. http://live.subtivals.org/#d3M6Ly9saXZlLnN1YnRpdmFscy5vcmc6MzE0MXxvdG90bw==), you can use an URL shorterner like http://bit.ly
 
 
 # Run your own server
 
-If you start this feature seriously, it is highly recommended to run your own server. 
+If you start to use this feature seriously, it is highly recommended to run your own server. 
 
 ## Install Node.js
 It requires [Node.js](https://nodejs.org), which is available for Windows/Linux/Mac. Make sure you have *node* installed on your system by running this commands in a console:
